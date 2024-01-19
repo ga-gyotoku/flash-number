@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フラッシュ暗算</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./flash.js"></script>
+  </head>
+<body>
+    
+    <div class="contents">
+        <div id="contents-title">
+          フラッシュ暗算
+        </div>
+        <div id="flash">
+          <div id="flash-text"  class="contents-text"></div>
+          <div id="select-box">
+            <div class="select-block">桁数：
+              <select name="set1" class="contents-select">
+                <option value="1">1桁</option>
+                <option value="2" selected>2桁</option>
+                <option value="3">3桁</option>
+                <option value="4">4桁</option>
+              </select>
+            </div>
+            <div class="select-block">問題数：
+              <select name="set2" class="contents-select">
+                <option value="5">5口</option>
+                <option value="10" selected>10口</option>
+                <option value="15">15口</option>
+                <option value="20">20口</option>
+              </select>
+            </div>
+            <div class="select-block">表示間隔：
+              <select name="set3" class="contents-select">
+                <option value="3">3秒</option>
+                <option value="2">2.5秒</option>
+                <option value="2">2秒</option>
+                <option value="1.8">1.8秒</option>
+                <option value="1.5">1.5秒</option>
+                <option value="1" selected>1秒</option>
+                <option value="0.8">0.8秒</option>
+                <option value="0.7">0.7秒</option>
+                <option value="0.6">0.6秒</option>
+                <option value="0.5">0.5秒</option>
+                <option value="0.3">0.3秒</option>
+              </select>
+            </div>
+          </div>
+          <div class="answer-block">
+            <input type="text" name="answer" id="answer">
+            <button class="contents-btn" id="start-btn">スタート</button>
+            <button class="contents-btn" id="answer-btn">確認</button>
+            <button class="contents-btn" id="back-btn">もう一度行う</button>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

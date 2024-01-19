@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+body {
+  font-family: serif;
+}
+  
+.contents {
+  background-color: black;
+  text-align: center;
+}
+
+#contents-title {
+  height: 10%;
+  font-size: 100px;
+  margin-bottom: 20px;
+  color: #7CFC00	;
+}
+
+#flash{
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#flash-text {
+  text-align: center;
+  font-size: 28vh;
+  width: 100vw;
+  height: 200px;
+  line-height: 200px;
+  background-color: black;
+  color: #7CFC00	;
+  margin-bottom: 15px;
+}
+
+.select-block{
+  color: #fff;
+  font-size: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contents-select {
+  font-size: 30px;
+}
+
+#contents-text {
+  color: white;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#answer{
+  display: block;
+  margin: 20px auto;
+  height: 15vh;
+  width: 60%;
+  font-size: 15vh;
+  text-align: center;
+  background-color: black;
+  color: #7CFC00;
+  border: solid 1px #fff;
+  font-family: serif;
+}
+
+.contents-btn {
+  font-size: 25px;
+  width: 300px;
+  height: 50px;
+  box-shadow: 0 0 10px #7CFC00;
+  background-color: black;
+  color: #7CFC00	;
+  border-radius: 30px;
+  font-family: serif;
+  margin: 20px auto;
+}
+
+/* レスポンシブ対応　PC基準で作成のため、max-widthを使用。
+メディアクエリに対応していないブラウザでは読み込まれないように、onlyを記述 */
+ 
+/* タブレット */
+@media only screen and (max-width:1024px){
+  #contents-title {
+    height: 10%;
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #7CFC00	;
+  }
+
+  #flash-text {
+    text-align: center;
+    font-size: 18vh;
+    width: 100vw;
+    height: 200px;
+    line-height: 200px;
+    background-color: black;
+    color: #7CFC00	;
+    margin-bottom: 15px;
+  }
+
+  #answer{
+    display: block;
+    margin: 20px auto;
+    height: 15vh;
+    width: 80%;
+    font-size: 15vh;
+    text-align: center;
+    background-color: black;
+    color: #7CFC00;
+    border: solid 1px #fff;
+    font-family: serif;
+  }
+}
+
+/* スマートフォン */
+@media only screen and (max-width:600px) {
+  body {
+    height: 500px;
+    font-family: serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #contents-title {
+    height: 10%;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #7CFC00	;
+  }
+
+  #flash-text {
+    text-align: center;
+    font-size: 15vh;
+    width: 100vw;
+    height: 200px;
+    line-height: 200px;
+    background-color: black;
+    color: #7CFC00	;
+    margin-bottom: 15px;
+  }
+
+  .select-block{
+    color: #fff;
+    font-size: 25px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  #answer{
+    display: block;
+    margin: 20px auto;
+    height: 15vh;
+    width: 90%;
+    font-size: 8vh;
+    text-align: center;
+    background-color: black;
+    color: #7CFC00;
+    border: solid 1px #fff;
+    font-family: serif;
+  }
+
+  .contents-btn {
+    font-size: 25px;
+    width: 250px;
+    height: 50px;
+    box-shadow: 0 0 10px #7CFC00;
+    background-color: black;
+    color: #7CFC00	;
+    border-radius: 30px;
+    font-family: serif;
+    margin: 20px auto;
+  }
+}
+
