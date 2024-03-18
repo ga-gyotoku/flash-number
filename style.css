@@ -58,6 +58,9 @@ body {
 
 .contents-select {
   font-size: 30px;
+  border-color: #fff;
+  background-color: black;
+  color: #fff;
 }
 
 #contents-text {
